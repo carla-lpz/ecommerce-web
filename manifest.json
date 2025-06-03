@@ -1,0 +1,39 @@
+{
+    "short_name": "frutivendo",
+    "name": "Frutivendolo",
+    "description":"Aplicación de Ecommerce PWA",
+    "start_url": "/",
+    "background_color": "#00ff00",
+    "display": "standalone",
+    "orientation": "landscape",
+    "scope": "/",
+    "theme_color": "#00ff00",
+    "icons": [
+        {
+            "src": "",
+            "type": "",
+            "sizes":""
+        },
+        {
+            "src": "",
+            "type": "",
+            "sizes":""
+        },
+        {
+            "src": "",
+            "type": "",
+            "sizes":""
+        }
+    ],
+
+    "screenshots": [
+        {
+            "src": "",
+            "type": "",
+            "sizes":"",
+            "label": "",
+            "form_factor": ""
+        }
+    ]
+    
+}
