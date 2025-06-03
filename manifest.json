@@ -7,7 +7,8 @@
     "theme_color": "#c6f703",
     "description":"'Frutivedolo' es una aplicación progresiva de ejemplo que utiliza tecnología PWA",
     "scope": "/",
-    "display": "minimal-ui",
+    "display": "standalone",
+    "display_override": ["fullscreen", "minimal-ui", "tabbed"],
     "orientation": "portrait",
     "id": "/",    
     "icons": [
@@ -45,25 +46,24 @@
 
     "screenshots": [
         {
-            "src": "./images/a_web.png",
+            "src": "images/c_phone.png",
+            "sizes": "861x1754",
             "type": "image/png",
-            "sizes":"2940x1840",
-            "label": "Frutivendolo versión desktop",
-            "form_factor": "wide"
+            "form_factor": "narrow",
+            "label": "Frutivendolo en versión mobile"
         },
         {
-            "src": "./images/b_tablet.png",
+            "src": "images/b_tablet.png",
+            "sizes": "1750x2504",
             "type": "image/png",
-            "sizes":"1750x2504",
-            "form_factor": "narrow",
-            "label": "Frutivendolo versión tablet"
+            "label": "Frutivendolo en versión Tablet"
         },
         {
-            "src": "./images/c_phone.png",
+            "src": "images/a_web.png",
+            "sizes": "2940x1840",
             "type": "image/png",
-            "sizes":"861x1754",
-            "form_factor": "narrow",
-            "label": "Frutivendolo versión mobile"
+            "form_factor": "wide",
+            "label": "Frutivendolo para computadoras de escritorio"
         }
     ]
     
