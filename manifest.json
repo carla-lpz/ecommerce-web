@@ -1,38 +1,69 @@
 {
-    "short_name": "frutivendo",
+    "short_name": "FRUTIVENDO",
     "name": "Frutivendolo",
-    "description":"Aplicación de Ecommerce PWA",
+    "version": "1.0.0",
     "start_url": "/",
-    "background_color": "#00ff00",
-    "display": "standalone",
-    "orientation": "landscape",
+    "background_color": "#c6f703",
+    "theme_color": "#c6f703",
+    "description":"'Frutivedolo' es una aplicación progresiva de ejemplo que utiliza tecnología PWA",
     "scope": "/",
-    "theme_color": "#00ff00",
+    "display": "minimal-ui",
+    "orientation": "portrait",
+    "id": "/",    
     "icons": [
         {
-            "src": "",
-            "type": "",
-            "sizes":""
+            "src": "./images/fruit-64.png",
+            "type": "image/png",
+            "sizes":"64x64"
         },
         {
-            "src": "",
-            "type": "",
-            "sizes":""
+            "src": "./images/fruit-96.png",
+            "type": "image/png",
+            "sizes":"96x96"
         },
         {
-            "src": "",
-            "type": "",
-            "sizes":""
+            "src": "./images/fruit-128.png",
+            "type": "image/png",
+            "sizes":"128x128"
+        },
+        {
+            "src": "./images/fruit-192.png",
+            "type": "image/png",
+            "sizes":"192x192"
+        },
+        {
+            "src": "./images/fruit-256.png",
+            "type": "image/png",
+            "sizes":"256x256"
+        },
+        {
+            "src": "./images/fruit-512.png",
+            "type": "image/png",
+            "sizes":"512x512"
         }
     ],
 
     "screenshots": [
         {
-            "src": "",
-            "type": "",
-            "sizes":"",
-            "label": "",
-            "form_factor": ""
+            "src": "./images/a_web.png",
+            "type": "image/png",
+            "sizes":"2940x1840",
+            "label": "Frutivendolo versión desktop",
+            "form_factor": "wide"
+        },
+        {
+            "src": "./images/b_tablet.png",
+            "type": "image/png",
+            "sizes":"1750x2504",
+            "form_factor": "narrow",
+            "label": "Frutivendolo versión tablet"
+        },
+        {
+            "src": "./images/c_phone.png",
+            "type": "image/png",
+            "sizes":"861x1754",
+            "form_factor": "narrow",
+            "label": "Frutivendolo versión mobile"
         }
     ]
     
