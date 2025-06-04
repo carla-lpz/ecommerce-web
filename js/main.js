@@ -93,10 +93,10 @@ function cargarProductos(arrayProductos) {
 
 // EVENTOS
 buttonCarrito.addEventListener('click', ()=> {
-    if (carrito.length > 0) {
+    if (carrito.length > 0 && navigator.onLine) {
         location.href = "checkout.html"
     } else {
-        alert('⛔️ Agrega al menos un producto al carrito.')
+        mostrarToast('Agrega al menos un producto al carrito.', 'alert')
     }
 })
 
