@@ -1,20 +1,4 @@
 // VARIABLES
-
-// const carrito = recuperarCarrito()
-// const precioTotal = dom('table tfoot td#totalPrice')
-// const btnComprar = dom('button#btnBuy')
-// const btnRetornar = dom('button#btnReturn')
-// const tableBody = dom('table tbody#tableBody')
-// const footer = dom('footer')
-
-// LÓGICA
-
-// FUNCIÓN PRINCIPAL
-
-// EVENTOS
-
-
-// VARIABLES
 const carrito = []
 
 const precioTotal = document.querySelector('table tfoot td#totalPrice span')
@@ -50,6 +34,14 @@ function crearFilaCarrito(prod) {
             </tr>`
 }
 
+function mostrarToast(mensaje, estilo) {
+    ToastIt.now({
+        style: estilo,
+        message: mensaje,
+        close: true,
+    })
+}
+
 function mostrarCarrito() {
     if (carrito.length > 0) {
         tableBody.innerHTML = ''
@@ -73,4 +65,16 @@ btnComprar.addEventListener('click', ()=> {
     localStorage.removeItem('shoppingKart')
     carrito.length = 0
     setTimeout(() => btnRetornar.click(), 2500)
+})
+
+window.addEventListener('offline', ()=> {
+    mostrarToast('Perdiste conexión a internet', 'error')
+    btnComprar.setAttribute('disable', 'true')
+    btnRetornar.setAttribute('disable', 'true')
+})
+
+window.addEventListener('online', ()=> {
+    mostrarToast('Estás conectado nuevamente a internet', 'info')
+    btnComprar.removeAttribute('disable')
+    btnRetornar.removeAttribute('disable')
 })
